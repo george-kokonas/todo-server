@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const URI = "mongodb+srv://halim:20028952Sami@cluster0.b1pz3.mongodb.net/todoapptest?retryWrites=true&w=majority"
+const URI = process.env.DB_URI;
 main()
   .then(() => console.log("db connected succesfully!"))
   .catch((err) => console.log(err));

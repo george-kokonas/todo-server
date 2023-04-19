@@ -9,9 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/todos", todoRoutes);
-// app.get("/" , (req , res)=>{
-//   res.send("hello im working")
-// })
+
 app.listen(Port, () => {
   console.log(`Server is listening on port ${Port}`);
 });
